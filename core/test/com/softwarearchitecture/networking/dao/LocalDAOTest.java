@@ -21,7 +21,7 @@ public class LocalDAOTest {
     @Before
     public void setUp() {
         // dao with all capabilities
-        mockDAO = new LocalDAO<Integer, String>();
+        mockDAO = LocalDAO.getInstance(Integer.class, String.class);
     }
 
 
